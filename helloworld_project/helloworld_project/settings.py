@@ -30,14 +30,18 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
+	
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
+	    'django.contrib.admin', # here by default
+	    'django.contrib.auth', # here by default
+	    'django.contrib.contenttypes', # here by default
+	    'django.contrib.sessions', # here by default
+	    'django.contrib.messages', # here by default
+	    'django.contrib.staticfiles', # here by default
+	    'pages.apps.PagesConfig',  # new
+	]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
